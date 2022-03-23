@@ -5,7 +5,8 @@ class AddItemForm extends Component {
   formRef = React.createRef();
   handleAdd = (e) => {
     e.preventDefault();
-    this.props.onAdd(this.inputRef.current.value);
+    const text = this.inputRef.current.value;
+    text.trim() && this.props.onAdd(text.trim());
     this.formRef.current.reset();
   };
   render() {
