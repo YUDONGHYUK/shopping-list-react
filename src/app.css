@@ -9,6 +9,7 @@ body {
 #root {
   width: 400px;
   background-color: white;
+  border-radius: 20px;
 }
 
 button {
@@ -16,6 +17,31 @@ button {
   border: 0;
   cursor: pointer;
   background-color: transparent;
+}
+
+.navbar {
+  height: 3rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  background: rgb(233, 109, 113);
+  background: radial-gradient(
+    circle,
+    rgba(233, 109, 113, 1) 0%,
+    rgba(250, 215, 161, 1) 100%
+  );
+  border-radius: 20px 20px 0 0;
+}
+
+.navbar-count {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  margin-left: 0.2em;
+  color: white;
+  background-color: transparent;
+  border-radius: 50%;
 }
 
 .item {
