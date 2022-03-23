@@ -2,11 +2,12 @@ import React, { Component } from "react";
 
 class Item extends Component {
   render() {
+    const { name, count } = this.props.items;
     return (
       <li className="item">
         <div className="item-info">
-          <span className="item-name">우유</span>
-          <span className="item-count">0</span>
+          <span className="item-name">{name}</span>
+          <span className="item-count">{count}</span>
         </div>
         <div className="item-button">
           <button className="item-increase">

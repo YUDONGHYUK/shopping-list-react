@@ -21,6 +21,7 @@ button {
 .item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.5em 2em;
   list-style: none;
 }
