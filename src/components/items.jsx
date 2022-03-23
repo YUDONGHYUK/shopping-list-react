@@ -17,7 +17,7 @@ class Items extends Component {
             />
           ))}
         </ul>
-        <AddItemForm />
+        <AddItemForm onAdd={this.props.onAdd} />
       </div>
     );
   }

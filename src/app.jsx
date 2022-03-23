@@ -42,7 +42,13 @@ class App extends Component {
     this.setState({ items });
   };
 
-  handleReset = () => {};
+  handleAdd = (text) => {
+    const items = [
+      ...this.state.items,
+      { id: Date.now(), name: text, count: 0 },
+    ];
+    this.setState({ items });
+  };
 
   render() {
     return (
@@ -55,6 +61,7 @@ class App extends Component {
           onIncrement={this.handleIncrement}
           onDecrement={this.handleDecrement}
           onDelete={this.handleDelete}
+          onAdd={this.handleAdd}
         />
       </>
     );
