@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 
 class Item extends Component {
+  itemRef = React.createRef();
+
+  componentDidMount() {
+    this.itemRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+  }
+
   handleIncrement = () => {
     this.props.onIncrement(this.props.item);
   };
@@ -16,7 +22,7 @@ class Item extends Component {
   render() {
     const { name, count } = this.props.item;
     return (
-      <li className="item">
+      <li ref={this.itemRef} className="item">
         <div className="item-info">
           <span className="item-name">{name}</span>
           <span className="item-count">{count}</span>
