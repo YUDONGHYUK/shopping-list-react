@@ -11,11 +11,11 @@ class Items extends Component {
   };
   render() {
     return (
-      <>
+      <ul className="items">
         {this.state.items.map((item) => (
           <Item key={item.id} items={item} />
         ))}
-      </>
+      </ul>
     );
   }
 }
