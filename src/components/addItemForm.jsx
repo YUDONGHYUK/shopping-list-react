@@ -6,7 +6,7 @@ class AddItemForm extends Component {
       <form className="add-form">
         <input type="text" className="add-input" />
         <button className="add-button">
-          <i class="fas fa-plus"></i>
+          <i className="fas fa-plus"></i>
         </button>
       </form>
     );
