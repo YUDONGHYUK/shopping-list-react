@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #abdcff;
+}
+
+#root {
+  width: 400px;
+  background-color: white;
+}
+
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 2em;
+  list-style: none;
+}
+
+.item-count {
+  display: inline-block;
+  text-align: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  margin-left: 0.2em;
+  color: white;
+  background-color: darkorange;
+  border-radius: 50%;
+}
+
+.item-button button {
+  font-size: 1.2rem;
+  transition: all 200ms ease-in;
+}
+
+.item-button button:last-child {
+  font-size: 1.1rem;
+}
+
+.item-button button:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.item-increase:hover {
+  color: green;
+}
+
+.item-decrease:hover {
+  color: orange;
+}
+
+.item-delete:hover {
+  color: red;
+}
