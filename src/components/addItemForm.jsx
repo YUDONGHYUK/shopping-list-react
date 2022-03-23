@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { useRef } from "react/cjs/react.production.min";
 
 class AddItemForm extends Component {
   inputRef = React.createRef();
